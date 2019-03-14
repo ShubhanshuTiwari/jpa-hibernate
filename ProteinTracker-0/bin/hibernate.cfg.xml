@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+<!--   <property name="hibernate.connection.password">appuser</property>
+ -->
+   <property name="hibernate.connection.url">jdbc:oracle:thin:System/Capgemini123@localhost:1521:XE</property>
+  <!-- <property name="hibernate.connection.username">appuser</property> -->
+<!--   <property name="hibernate.default_schema">test</property> -->
+  <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.hbm2ddl.auto">create</property>
+  <property name="hibernate.jdbc.use_get_generated_keys">true</property>
+		<mapping resource="User.hbm.xml" />
+ </session-factory>
+</hibernate-configuration>
+ 

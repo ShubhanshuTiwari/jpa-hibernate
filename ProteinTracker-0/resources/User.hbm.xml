@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 15, 2013 2:53:22 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.cg.User" table="USERS">
+        <id name="id" type="int">
+            <column name="ID" />
+            <!-- <generator class="identity" /> -->
+            <generator class="sequence-identity">
+            <param name="sequence">PRODUCT_ID_SEQ</param>
+            </generator>
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="total" type="int">
+            <column name="TOTAL" />
+        </property>
+        <property name="goal" type="int">
+            <column name="GOAL" />
+        </property>
+    </class>
+</hibernate-mapping>
+ 
